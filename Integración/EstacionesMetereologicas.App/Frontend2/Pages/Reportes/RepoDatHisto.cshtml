@@ -1,0 +1,47 @@
+﻿@page
+@model FrontEnd2.Pages.RepoDatHistoModel
+@{
+}
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <link rel='stylesheet' href='~/css/assets/css/bootstrap.min.css' type='text/css' media='all'/> -->
+<link rel='stylesheet' href='~/css/styles/Styles/style3.css' type='text/css' media='all' />
+<link rel='stylesheet'
+    <!--href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C700italic%2C300%2C400%2C700%2C800%7CMontserrat%3A300italic%2C400italic%2C700italic%2C300%2C400%2C700%7CDosis%3A400%2C700&#038;ver=4.5'
+    type='text/css' media='all' /> -->
+<link rel='stylesheet' href='~/css/assets/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='~/css/assets/css/flexslider.css' type='text/css' media='all' />
+
+<section id="home"
+    style="padding:160px 0;background-image: url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1474&q=80); background-position: center; background-repeat: no-repeat;background-size: cover;background-attachment:fixed;">
+    <div class="container">
+        <div class="textwidget">
+            <h1 class="toptitle">Detalle reporte <br /><br />
+            </h1>
+            <div class="contactstyle topform">
+                <form method="POST">
+                    <h3>Codigo estación: @Model.datos.Codigo_Estacion</h3>
+
+                    <h3>Nombre estación: @Model.datos.Nombre_Estacion</h3>
+                    
+                    <h3>Fecha: @Model.datos.Fecha</h3>
+
+                    <h3>Temperatura: @Model.datos.Temperatura</h3>
+                    
+                    <h3>Humedad: @Model.datos.Humedad</h3>
+
+                    <h3>Presión Atmosférica: @Model.datos.Presion_Atmosferica</h3>
+
+                    <h3>Velocidad del Viento: @Model.datos.Velocidad_Viento</h3>
+
+                    <h3>Pluviosidad: @Model.datos.Pluviosidad</h3>
+
+                    <h3>Pluviosidad: @Model.datos.Radiacion_Solar</h3>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
